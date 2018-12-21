@@ -1,0 +1,5 @@
+# 客户端登录接口
+clientLogin: /client/v1/clientAuth.action
+
+# 获取车辆库存
+carStock: /app/esss/carsale/client/v2/huoQuCheLiangKuCun.action

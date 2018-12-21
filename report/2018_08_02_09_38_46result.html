@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>企业进销存接口自动化测试报告:</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.3"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { word-wrap:break-word;word-break:break-all;overflow:auto;}
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 2ex;
+    margin-bottom: 3ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    /* width: 500px;*/
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 99%;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #74A474; }
+.failClass  { background-color: #FDD283; }
+.errorClass { background-color: #FF6600; }
+.passCase   { color: #6c6; }
+.failCase   { color: #FF6600; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+#div_base {
+            position:absolute;
+            top:0%;
+            left:5%;
+            right:5%;
+            width: auto;
+            height: auto;
+            margin: -15px 0 0 0;
+}
+</style>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+<div id="div_base">
+
+<div class='page-header'>
+<h1>企业进销存接口自动化测试报告:</h1>
+<p class='attribute'><strong>开始时间:</strong> 2018-08-02 09:38:46</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.055003</p>
+<p class='attribute'><strong>状态:</strong> 通过 1</p>
+
+</div>
+<p class='description'>用例执行情况：</p>
+
+
+
+<div class="btn-group btn-group-sm">
+<button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button>
+<button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>
+<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>
+</div>
+<p></p>
+<table id='result_table' class="table table-bordered">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>测试套件/测试用例</td>
+    <td>总数</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>查看</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_esss.Client_Esss_Sales</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_GetCarInventory</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 2018-08-02 09:38:46,246 logger.py[line:36] INFO 获取车辆库存的结果：b'{"code":"1","message":"","car_id":"7817603986305219023","car_no":"A888888","datas":[{"spec":"500ml","prop_values":"","change_num":"0.000","enable_num":"4.000","prod_id":"5151123953615720167","enable_num_unit":"4.000\xe7\x93\xb6","return_num_unit":"0.000\xe7\x93\xb6","return_num":"0.000","name_spec":"500ml","units":[{"id":"6602712034731593925","is_base":"0","ratio":"12.00000000","name":"\xe7\xae\xb1","barcode":"","unit_id":"6602712034731593925","unit_name":"\xe7\xae\xb1","pd_id":"5151123953615720167"},{"id":"5305849997528583141","is_base":"1","ratio":"1.00000000","name":"\xe7\x93\xb6","barcode":"","unit_id":"5305849997528583141","unit_name":"\xe7\x93\xb6","pd_id":"5151123953615720167"}],"change_num_unit":"0.000\xe7\x93\xb6","prod_name":"\xe5\x86\xb0\xe7\xbb\xbf\xe8\x8c\xb6"},{"spec":"1\xc3\x9712[\xe6\x9f\xa0\xe6\xaa\xac]","prop_values":"\xe6\x9f\xa0\xe6\xaa\xac","change_num":"0.000","enable_num":"1.000","prod_id":"5939131273017815124","enable_num_unit":"1.000\xe4\xb8\xaa","return_num_unit":"0.000\xe4\xb8\xaa","return_num":"0.000","name_spec":"1\xc3\x9712","units":[{"id":"8540222738365232169","is_base":"0","ratio":"24.00000000","name":"\xe7\xbd\x90","barcode":"","unit_id":"8540222738365232169","unit_name":"\xe7\xbd\x90","pd_id":"5939131273017815124"},{"id":"6019946915290783275","is_base":"1","ratio":"1.00000000","name":"\xe4\xb8\xaa","barcode":"","unit_id":"6019946915290783275","unit_name":"\xe4\xb8\xaa","pd_id":"5939131273017815124"}],"change_num_unit":"0.000\xe4\xb8\xaa","prod_name":"\xe7\x8c\xaa\xe8\x82\x89\xe8\x84\xaf"},{"spec":"[\xe6\x9f\xa0\xe6\xaa\xac]","prop_values":"\xe6\x9f\xa0\xe6\xaa\xac","change_num":"0.000","enable_num":"1.000","prod_id":"6042102971436020761","enable_num_unit":"1.000\xe7\xae\xb1","return_num_unit":"0.000\xe7\xae\xb1","return_num":"0.000","name_spec":"","units":[{"id":"6375619424333135206","is_base":"1","ratio":"1.00000000","name":"\xe7\xae\xb1","barcode":"","unit_id":"6375619424333135206","unit_name":"\xe7\xae\xb1","pd_id":"6042102971436020761"}],"change_num_unit":"0.000\xe7\xae\xb1","prod_name":"\xe7\x8c\xaa\xe8\x82\x89\xe8\x84\xaf"},{"spec":"\xe8\xa7\x84\xe6\xa0\xbc[\xe6\xa6\xb4\xe8\x8e\xb2,\xe5\xbe\xae\xe7\x94\x9c]","prop_values":"\xe6\xa6\xb4\xe8\x8e\xb2,\xe5\xbe\xae\xe7\x94\x9c","change_num":"0.000","enable_num":"38.000","prod_id":"8724984957455734437","enable_num_unit":"1\xe7\xae\xb118.000\xe4\xb8\xaa","return_num_unit":"0.000\xe4\xb8\xaa","return_num":"0.000","name_spec":"\xe8\xa7\x84\xe6\xa0\xbc","units":[{"id":"7219729326532160097","is_base":"0","ratio":"20.00000000","name":"\xe7\xae\xb1","barcode":"","unit_id":"7219729326532160097","unit_name":"\xe7\xae\xb1","pd_id":"8724984957455734437"},{"id":"7157268363792680704","is_base":"1","ratio":"1.00000000","name":"\xe4\xb8\xaa","barcode":"","unit_id":"7157268363792680704","unit_name":"\xe4\xb8\xaa","pd_id":"8724984957455734437"}],"change_num_unit":"0.000\xe4\xb8\xaa","prod_name":"\xe5\xb0\x8f\xe7\xac\xbc\xe5\x8c\x85"},{"spec":"500ml","prop_values":"","change_num":"2.000","enable_num":"10.000","prod_id":"5403122485258629504","enable_num_unit":"10.000\xe7\x93\xb6","return_num_unit":"0.000\xe7\x93\xb6","return_num":"0.000","name_spec":"500ml","units":[{"id":"5953154867070505077","is_base":"0","ratio":"12.00000000","name":"\xe7\xae\xb1","barcode":"","unit_id":"5953154867070505077","unit_name":"\xe7\xae\xb1","pd_id":"5403122485258629504"},{"id":"6938848638551220112","is_base":"1","ratio":"1.00000000","name":"\xe7\x93\xb6","barcode":"","unit_id":"6938848638551220112","unit_name":"\xe7\x93\xb6","pd_id":"5403122485258629504"}],"change_num_unit":"2.000\xe7\x93\xb6","prod_name":"\xe9\x9b\xaa\xe7\xa2\xa7"},{"spec":"600ml","prop_values":"","change_num":"0.000","enable_num":"10.000","prod_id":"8096068286267187956","enable_num_unit":"1\xe7\xae\xb1","return_num_unit":"0.000\xe7\x93\xb6","return_num":"0.000","name_spec":"600ml","units":[{"id":"8135979231776530385","is_base":"0","ratio":"10.00000000","name":"\xe7\xae\xb1","barcode":"","unit_id":"8135979231776530385","unit_name":"\xe7\xae\xb1","pd_id":"8096068286267187956"},{"id":"7044384397079907899","is_base":"1","ratio":"1.00000000","name":"\xe7\x93\xb6","barcode":"","unit_id":"7044384397079907899","unit_name":"\xe7\x93\xb6","pd_id":"8096068286267187956"}],"change_num_unit":"0.000\xe7\x93\xb6","prod_name":"\xe8\x84\x89\xe5\x8a\xa8"},{"spec":"250ml","prop_values":"","change_num":"0.000","enable_num":"24.000","prod_id":"8759159331652676688","enable_num_unit":"1\xe7\xae\xb1","return_num_unit":"0.000\xe7\x93\xb6","return_num":"0.000","name_spec":"250ml","units":[{"id":"7709694670591761451","is_base":"0","ratio":"24.00000000","name":"\xe7\xae\xb1","barcode":"","unit_id":"7709694670591761451","unit_name":"\xe7\xae\xb1","pd_id":"8759159331652676688"},{"id":"5543736517287809409","is_base":"1","ratio":"1.00000000","name":"\xe7\x93\xb6","barcode":"","unit_id":"5543736517287809409","unit_name":"\xe7\x93\xb6","pd_id":"8759159331652676688"}],"change_num_unit":"0.000\xe7\x93\xb6","prod_name":"\xe7\x99\xbd\xe8\x8a\xb1\xe8\x9b\x87\xe8\x8d\x89\xe6\xb0\xb4"}]}'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>总计</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# 环境地址
+host:
+    test_231: 172.31.3.231:8888
+    test_233: 172.31.3.233:8888
+
+
+# 企业code
+Tenantcode: yang
+
+# 用户账号
+code: yang
+
+# 密码
+client_password: 70175b0d4d0a3233
+
+# 企业id
+tenant_id: 8100630123350000887
+
+# 客户端版本号
+versioncode: 6.0.2
