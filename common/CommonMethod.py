@@ -47,7 +47,6 @@ class CommonMethod(GetParm):
 
         api = self.Api[api_name]
         url = 'http://' + self.host + api
-        print(url)
         return url
 
 
